@@ -25,7 +25,7 @@ fabricOrg:
   domain: org1.taulia.com
   msp: Org1MSP
 fabricCa:
-  keyStoreHash: 53c019bc2c8c432118966d9448203a554763753c0c7a99d55a82ff90ad93b28e_sk
+  keyStoreHash: c4d6886fb9125ae7c69acbfcb965eeed7b7d39c0ce65293b369175aa3635cdaf
   image: gcr.io/taulia-blockchain/fabric-ca
   tag: *fabricTag
 fabricPeer:
