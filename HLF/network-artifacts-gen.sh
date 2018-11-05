@@ -21,7 +21,7 @@ if [ ! "$(docker images | grep hyperledger/fabric )" ]; then
  docker pull hyperledger/fabric-couchdb:$FABRIC
 fi
 
-if [ ! -d "bin"]; then
+if [ ! -d "bin" ]; then
     curl https://nexus.hyperledger.org/content/repositories/releases/org/hyperledger/fabric/hyperledger-fabric/${BIN}/hyperledger-fabric-${BIN}.tar.gz | tar xz
 fi
 
