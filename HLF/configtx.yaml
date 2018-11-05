@@ -62,7 +62,7 @@ Organizations:
         # ID to load the MSP definition as
         ID: Org1MSP
 
-        MSPDir: crypto-config/peerOrganizations/org1.tauia.com/msp
+        MSPDir: crypto-config/peerOrganizations/org1.taulia.com/msp
 
         AnchorPeers:
             # AnchorPeers defines the location of peers which can be used
@@ -103,7 +103,7 @@ Orderer: &OrdererDefaults
     OrdererType: solo
 
     Addresses:
-        - orderer.tauia.com:7050
+        - orderer.taulia.com:7050
 
     # Batch Timeout: The amount of time to wait before creating a batch
     BatchTimeout: 2s

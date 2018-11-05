@@ -31,12 +31,12 @@ sleep $SLEEP_TIMEOUT
 
 sleep $SLEEP_TIMEOUT
 
-KEYSTORE=`ls ./crypto-config/peerOrganizations/$ORG_DOMAIN/users/Admin@$ORG_DOMAIN/msp/keystore`
-composer identity import \
--p hlfv1 \
--u Admin@$ORG_DOMAIN \
--c ./crypto-config/peerOrganizations/$ORG_DOMAIN/users/Admin@$ORG_DOMAIN/msp/signcerts/Admin@$ORG_DOMAIN-cert.pem \
--k ./crypto-config/peerOrganizations/$ORG_DOMAIN/users/Admin@$ORG_DOMAIN/msp/keystore/$KEYSTORE
+#  KEYSTORE=`ls ./crypto-config/peerOrganizations/$ORG_DOMAIN/users/Admin@$ORG_DOMAIN/msp/keystore`
+#  composer identity import \
+#  -p hlfv1 \
+#  -u Admin@$ORG_DOMAIN \
+#  -c ./crypto-config/peerOrganizations/$ORG_DOMAIN/users/Admin@$ORG_DOMAIN/msp/signcerts/Admin@$ORG_DOMAIN-cert.pem \
+#  -k ./crypto-config/peerOrganizations/$ORG_DOMAIN/users/Admin@$ORG_DOMAIN/msp/keystore/$KEYSTORE
 
 sleep $SLEEP_TIMEOUT
 
