@@ -1,7 +1,7 @@
 # Default values for fabric-artifacts.
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
-fabricTag: &fabricTag
+fabricTag: &fabricTag latest
 replicaCount: 1
 image:
   repository: nginx
@@ -16,7 +16,7 @@ fabricOrderer:
   addr: 35.193.151.88
   orgDomain: org1.taulia.com
   replicas: 1
-  image: gcr.io/taulia-blockchain/fabric-orderer
+  image: hyperledger/fabric-orderer
   tag: *fabricTag
   orgDomain: taulia.com
   consensusType: solo
@@ -26,10 +26,10 @@ fabricOrg:
   msp: Org1MSP
 fabricCa:
   keyStoreHash: c4d6886fb9125ae7c69acbfcb965eeed7b7d39c0ce65293b369175aa3635cdaf
-  image: gcr.io/taulia-blockchain/fabric-ca
+  image: hyperledger/fabric-ca
   tag: *fabricTag
 fabricPeer:
-  image: gcr.io/taulia-blockchain/fabric-peer
+  image: hyperledger/fabric-peer
   tag: *fabricTag
 ingress:
   enabled: false

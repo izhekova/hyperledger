@@ -2,5 +2,5 @@
 #note: modify repository and revison accordingly.
 cryptoConfigMount:
   gitRepo:
-    repository: "https://source.developers.google.com/p/taulia-blockchain/r/hyperledger-repository"
+    repository: "https://github.com/izhekova/hyperledger.git"
     revision: "master"
